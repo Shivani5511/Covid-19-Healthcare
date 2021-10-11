@@ -1,0 +1,116 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: White;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> COVID-19 Vaccine Registration Form</h1> </center>  
+  <hr>  
+  <label> <b>First name:  </b></label>   
+<input type="text" name="firstname" placeholder= "Enter First name" size="15" required />   
+<label>  <b>Middle name: </b> </label>   
+<input type="text" name="middlename" placeholder="Enter Middle name" size="15" required />   
+<label>  <b>Last name: </b> </label>    
+<input type="text" name="lastname" placeholder="Enter Last name" size="15"required />   
+<div>  
+<div>  
+<label>   
+ <b>Gender :  </b> 
+</label><br>  
+<input type="radio" value="Male" name="gender" > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+ <b>Current Address : </b>  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+    
+	<label> 
+ <b>Mobile Number : </b>
+</label>
+	  <input type="text" name="phone" placeholder="Enter Mobile Number" pattern="^\d{10}$" required>
+  <table class="col-lg-12">
+		<tr>
+		<div class="form-group row">
+    <label for="inputEmail" class="col-sm-2 col-form-label"> <b>Date of Birth(DOB) : </b></label>
+		<form action="/action_page.php">
+  <input type="date" id="birthday" name="birthday">
+</form>
+  
+  <label> <br><br>
+     <label> 
+ <b>Aadhar Number : </b>
+</label>
+	<input type="text" name="Ano" placeholder="Enter Aadhar Number (format: xxxx-xxxx-xxxx)" pattern="^\d{4}-\d{4}-\d{4}$" required>
+  
+  <label> 
+ <b>PAN Number : </b>
+</label>
+     <input type="text" name="Pno" placeholder="Enter PAN Number" >
+   <br>
+<form action="/action_page.php">
+  <label for="cars"> <b>Select Center: </b></label>
+  <select name="Center" id="Center">
+    <option value="Mumbai">Mumbai</option>
+    <option value="Navi-Mumbai">Navi-Mumbai</option>
+    <option value="Pune">Pune</option>
+    <option value="Alibag">Alibag</option>
+  </select><br><br>
+<label> 
+ <b>Enter Pincode: </b>
+</label>
+     <input type="text" name="Pin" placeholder="Enter Pincode" >
+     <br><br>   
+  <button type="submit" class="btn btn-primary" formaction="D:\Mhatre Sonal\COVID-19\Home.html"> <b>SUBMIT </b></button>
+   <button type="button" class="btn btn-secondary"> <b>RESET </b></button><br><br>
+</form>  
+</body>  
+</html>
